@@ -1,9 +1,9 @@
-import SvgAboutcard1 from './aboutcard1.svg'
 import PngHeaderimg from './headerimg.png'
 import SvgReact from './react.svg'
+import PngYellowbox from './yellowbox.png'
 
 export {
-  SvgAboutcard1,
   PngHeaderimg,
-  SvgReact
+  SvgReact,
+  PngYellowbox
 }
