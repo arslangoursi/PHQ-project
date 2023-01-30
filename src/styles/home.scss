@@ -122,8 +122,7 @@
 .tokenization__section {
   width: 100%;
   max-width: 1650px;
-  padding: 6em 2em 2em;
-
+  padding: 12em 2em 2em;
   margin: 0 auto;
 }
 .tokenization__section__blue {
@@ -132,6 +131,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 2em;
 }
 .tokenization__section__blue__img img {
   margin-top: -10em;
@@ -150,12 +150,57 @@
   color: white;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 .tokenization__section__blue__heading {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   color: white;
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+.tokenization__section__blue__text {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  font-size: 12px;
+}
+.tokenization__section__blue__cards {
+  display: flex;
+  padding: 2em 0 3em 0;
+}
+.tokenization__section__blue__cards__card {
+  display: flex;
+  color: white;
+  background: linear-gradient(#640168, #a200a8);
+  border-radius: 20px;
+  width: 450px;
+  margin-right: 1.5em;
+  padding: 2em;
+  justify-content: space-between;
+}
+
+.tokenization__section__blue__cards__card__icon {
+  margin-top: 1em;
+}
+.tokenization__section__blue__cards__card__text {
+  width: 60%;
+}
+.tokenization__section__blue__cards__card__text__heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.tokenization__section__blue__cards__card__text__subheading {
+  font-size: 14px;
+  color: #d0d0d1;
+  margin: 1em 0;
+}
+.tokenization__section__blue__cards__card__text__more {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -164,7 +209,24 @@
   .about__section__cards {
     width: 100%;
   }
+  .tokenization__section__blue__cards {
+    flex-direction: column;
+  }
+  .tokenization__section__blue__cards__card {
+    margin-right: 0em;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 2em 1em;
+  }
+  .tokenization__section__blue__cards__card__text {
+    width: 80%;
+    margin-left: 1em;
+  }
+  .tokenization__section__blue__cards__card__icon svg {
+    width: 63px;
+  }
 }
+
 @media (max-width: 920px) {
   .about__section__cards {
     width: 80%;
@@ -200,5 +262,8 @@
 @media (max-width: 400px) {
   .about__section__card {
     width: 95%;
+  }
+  .tokenization__section__blue__heading {
+    font-size: 30px;
   }
 }
